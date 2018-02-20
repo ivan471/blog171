@@ -6,6 +6,7 @@ $route['blog/post']       = 'blog/post';       // halaman penulisan blog
 $route['blog/submit']     = 'blog/submit';     // proses penyimpanan blog
 $route['blog/(:any)']     = 'blog/index/$1';   // baca blog dengan blog_id $1
 
+$route['login']           = 'user/login';   // halaman login user
 $route['signin']          = 'user/signin';     // proses login user
 $route['signout']         = 'user/signout';    // proses logout user
 $route['user/reg']        = 'user/register';   // halaman form registrasi user

@@ -1,0 +1,13 @@
+$('#listuser').DataTable({
+  "ajax":{
+    "url":"/api/listmhs",
+    "type":"POST",
+    "data":[]
+  },
+  "sAjaxDataProp":"data",
+  "columns":[{"data":"nimhs"},
+            {"data":"namamhs"},
+            {"data":"email"},
+            {"data":"tplahir"}
+  ]
+});
