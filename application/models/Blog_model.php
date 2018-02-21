@@ -30,4 +30,16 @@ class Blog_model extends CI_Model {
     $this->db->insert( 'blogs', $data );
   }
 
+  public function edit($blog_id){
+      $data = [
+                'blog_ID' => $blog_id,
+                'judul' => $this->input->post('judul'),
+                'isi' => $this->input->post('isi'),
+                'user_ID' => $this->session->uid,
+                'tanggal' => date('Y-m-d H:i:s')
+              ];
+      $this->session->blog_id = $blog_id;
+      $this->db->where('blog_id',$blog_id);
+      $this->db->update( 'blogs', $data );
+    }
 }

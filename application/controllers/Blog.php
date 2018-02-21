@@ -24,8 +24,18 @@ class Blog extends CI_Controller {
     $this->blog_model->submit();
     redirect("/");
 	}
-
-
+  public function edit($blog_ID){
+ $data = $this->blog_model->blog($blog_ID);
+ $this->load->template('edit_blog',$data);
+}
+public function subedit($blog_ID){
+ $data = $this->blog_model->edit($blog_ID);
+ redirect('/');
+}
+public function delete($blog_ID){
+$this->blog_model->delete($blog_ID);
+redirect('/');
+}
 
 
 }
