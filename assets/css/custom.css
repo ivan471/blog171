@@ -16,7 +16,12 @@
 .judul{
   color: #000;
 }
-h2
+h2,h1,p,h3,h4
 {
   color: #000;
+}
+.baca
+{
+  margin-top: 100px;
+  text-align: center;
 }
