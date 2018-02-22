@@ -8,6 +8,7 @@ $route['blog/(:any)']     = 'blog/index/$1';   // baca blog dengan blog_id $1
 $route['blog/edit/(:any)']   = 'blog/edit/$1';
 $route['blog/subedit/(:any)']   = 'blog/subedit/$1';
 $route['blog/delete/(:any)']   = 'blog/delete/$1';
+$route['list/(:any)']       = 'blog/lists/$1';
 
 $route['login']           = 'user/login';   // halaman login user
 $route['user/signin']          = 'user/signin';     // proses login user

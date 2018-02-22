@@ -19,6 +19,10 @@ class Blog extends CI_Controller {
   public function post()	{
     $this->load->template( 'postblog' );
 	}
+  public function lists($user_ID){
+  $data['user'] = $this->blog_model->list($user_ID);
+  $this->load->template('list', $data);
+  }
 
 	public function submit()	{
     $this->blog_model->submit();

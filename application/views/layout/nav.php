@@ -21,11 +21,12 @@
             <li><a id="Login" href="/login">Login</a></li>
         <?php } ?>
         <?php if( isset( $this->session->nama ) ){?>
+        <li><a href="/blog/post">Tulis Post</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/blog/post">Tulis Post</a></li>
-            <li><a href="/user/<?= $this->session->uid ?>">nama</a></li>
+            <li><a href="/list/<?= $this->session->uid ?>">List Blog User</a></li>
+            <li><a href="/user/<?= $this->session->uid ?>">Profil</a></li>
             <li><a id="Logout"href="/signout">Logout</a></li>
             <?php } ?>
           </ul>
