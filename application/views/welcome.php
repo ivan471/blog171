@@ -1,6 +1,7 @@
 <section id="intro" class="intro">
   <div class="slogan">
-    <h2>Blogs</h2>
+    <h2 class="textjudul">Blogs</h2>
+    <p>Welcome to Blog</p>
   </div>
   <div class="page-scroll">
       <a href="#blog" class="btn btn-circle">
@@ -18,7 +19,7 @@
                 <h2>Daftar Blogs</h2>
 								<h3><?php
 									foreach( $blogs as $blog ){
-										echo "<a href='/blog/" . $blog['blog_ID'] ."'>" . $blog['judul']."<a><br>";
+										echo "<a href='/blog/" . $blog['blog_ID'] ."'>" . $blog['judul']."<a><br><br>";
 								}
 								 ?></h3><br>
 								</div>

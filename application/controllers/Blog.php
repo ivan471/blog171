@@ -28,7 +28,7 @@ class Blog extends CI_Controller {
     $this->blog_model->submit();
     redirect("/");
 	}
-  public function edit($blog_ID){
+  public function formedit($blog_ID){
  $data = $this->blog_model->blog($blog_ID);
  $this->load->template('edit_blog',$data);
 }

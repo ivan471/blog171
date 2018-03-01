@@ -5,12 +5,14 @@
     <div class="boxed-grey">
     <h1><?= $blog['judul'] ?></h1>
     <hr>
-    <p>
-      <?= $blog['isi']  ?>
-    </p>
+    <div class="koran">
+      <p>
+        <?= $blog['isi']  ?>
+      </p>
+    </div>
     <hr>
     <h3><?= $blog['nama'] ?></h3>
-    <h4><?= $blog['tanggal'] ?></h4>
+    <h5><?= $blog['tanggal'] ?></h5>
     </div>
     <hr>
     <?php if( $this->session->uid == $blog['user_ID'] ){?>

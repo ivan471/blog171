@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['blog/post']       = 'blog/post';       // halaman penulisan blog
 $route['blog/submit']     = 'blog/submit';     // proses penyimpanan blog
 $route['blog/(:any)']     = 'blog/index/$1';   // baca blog dengan blog_id $1
-$route['blog/edit/(:any)']   = 'blog/edit/$1';
+$route['blog/edit/(:any)']   = 'blog/formedit/$1'; //
 $route['blog/subedit/(:any)']   = 'blog/subedit/$1';
 $route['blog/delete/(:any)']   = 'blog/delete/$1';
 $route['list/(:any)']       = 'blog/lists/$1';

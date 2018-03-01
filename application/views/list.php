@@ -5,7 +5,7 @@
   <h2>
 <?php
   foreach( $user as $users ){
-    echo "<a href='/blog/" . $users['blog_ID'] ."'>" . $users['judul']."<a><br>";
+    echo "<a href='/blog/" . $users['blog_ID'] ."'>" . $users['judul']."<a><br><br>";
 }
  ?>
 </h2>
