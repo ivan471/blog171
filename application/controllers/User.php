@@ -19,6 +19,7 @@ class User extends CI_Controller {
   }
   public function regsubmit(){
     $this->user_model->register();
+    redirect('/');
   }
 
   public function signin(){

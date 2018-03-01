@@ -22,8 +22,7 @@ class User_model extends CI_Model {
 
   public function user( $email ){
 
-    $sql = "SELECT * FROM users
-            WHERE email='".$email."'";
+    $sql = "SELECT * FROM users WHERE email='".$email."'";
 
     $query = $this->db->query( $sql );
 

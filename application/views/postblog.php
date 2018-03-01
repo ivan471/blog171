@@ -11,10 +11,10 @@
                           <!-- <div class="col-sm-6 form-group"> -->
                             <div class="form-group">
                               <label for="judul">Judul</label>
-                              <input type="text" class="form-control" name="judul" id="subject" placeholder="Judul Blog" data-rule="minlen:4" data-msg="Tolong isi judul" />
+                              <input type="text" class="form-control" name="judul" id="subject" placeholder="Judul Blog" data-rule="minlen:4" required="Tolong isi judul" />
                               <div class="validation"></div>
                               <label for="Pesan">Isi Blog</label>
-                              <textarea class="form-control" name="isi" rows="5" data-rule="required" data-msg="Tolong isi blog" placeholder="Isi Blog"></textarea>
+                              <textarea class="form-control" name="isi" rows="5" data-rule="required" required="Tolong isi blog" placeholder="Isi Blog"></textarea>
                               <div class="validation"></div>
                               <input type="submit" value="Simpan" class="btn btn-primary" >
                             </div>

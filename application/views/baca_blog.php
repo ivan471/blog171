@@ -2,6 +2,7 @@
 <br><br>
   <div class="baca">
     <hr>
+    <div class="boxed-grey">
     <h1><?= $blog['judul'] ?></h1>
     <hr>
     <p>
@@ -10,6 +11,7 @@
     <hr>
     <h3><?= $blog['nama'] ?></h3>
     <h4><?= $blog['tanggal'] ?></h4>
+    </div>
     <hr>
     <?php if( $this->session->uid == $blog['user_ID'] ){?>
       <div class="form-group" id="bt_edit">

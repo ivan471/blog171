@@ -6,19 +6,19 @@
             <h1 class="judul">Register</h1>
               <form action="/user/reg_submit" method="post" role="form" >
                 <div class="col-sm-6 form-group">
-                  <input type="email" name="email" class="form-control input-text" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" name="email" class="form-control input-text" id="email" placeholder="Your Email" data-rule="email" required="Please enter a valid email" data-msg="Test" />
                   <div class="validation"></div>
                 </div>
                 <div class="col-sm-6 form-group">
-                  <input type="text" class="form-control input-text" name="nama" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" class="form-control input-text" name="nama" id="name" placeholder="Your Name" data-rule="minlen:4" required="Please enter at least 4 chars" />
                   <div class="validation"></div>
                 </div>
                 <div class="col-sm-6 form-group">
-                  <input type="password" class="form-control input-text" name="pass1" id="pass1" placeholder="Your Password" data-rule="minlen:6" data-msg="Please enter at least 6 chars of password" />
+                  <input type="password" class="form-control input-text" name="pass1" id="pass1" placeholder="Your Password" data-rule="minlen:6" required="Please enter at least 6 chars of password" />
                   <div class="validation"></div>
                 </div>
                 <div class="col-sm-6 form-group">
-                  <input type="password" class="form-control input-text" name="pass2" id="pass2" placeholder="Your Password Again" data-rule="minlen:6" data-msg="Please enter at least 6 chars of password again" />
+                  <input type="password" class="form-control input-text" name="pass2" id="pass2" placeholder="Your Password Again" data-rule="minlen:6" required="Please enter at least 6 chars of password again" />
                   <div class="validation"></div>
                 </div>
                 <div class="col-sm-12 form-group">

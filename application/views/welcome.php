@@ -18,9 +18,9 @@
                 <h2>Daftar Blogs</h2>
 								<h3><?php
 									foreach( $blogs as $blog ){
-										echo "<a href='/blog/" . $blog['blog_ID'] ."'>" . $blog['judul'].'  '.$blog['tanggal']."<a><br>";
+										echo "<a href='/blog/" . $blog['blog_ID'] ."'>" . $blog['judul']."<a><br>";
 								}
-								 ?></h3>
+								 ?></h3><br>
 								</div>
             </div>
           </div>
